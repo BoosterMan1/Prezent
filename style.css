@@ -102,7 +102,7 @@ a {
 
     .img2-section-p {
         padding: 20px;
-        width: 100%;
+        width: 80%;
         text-align: center;
     }
 
@@ -122,11 +122,11 @@ a {
 
     @keyframes pulse {
         0% {
-            transform: scale(95%);
+            transform: scale(90%);
         }
 
         100% {
-            transform: scale(105%);
+            transform: scale(100%);
         }
     }
 
@@ -142,11 +142,11 @@ a {
 
     @keyframes slide {
         0% {
-            transform: translate(100px);
+            transform: translate(90px);
         }
 
         100% {
-            transform: translate(-100px);
+            transform: translate(-90px);
         }
     }
 }
