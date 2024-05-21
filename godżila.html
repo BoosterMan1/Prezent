@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinozaury</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            background-image: url(godżilawalczyzokrętami.jpg);
+        }
+
+        .header-text {
+            color: rgb(25, 0, 255);
+            text-shadow: 0px 0px 5px gray;
+        }
+
+        .main-h1 {
+            animation: colorChange2 3s infinite alternate;
+        }
+
+        .header-button {
+            animation: colorChange 3s infinite alternate;
+            text-shadow: 0px 0px 3px rgb(255, 255, 255);
+            background-image: url(dinokrajobraz.jpg);
+        }
+
+        .img2-section {
+            background-image: url(godżilawalczyzokrętami.jpg);
+            background-size: cover;
+            height: 500px;
+        }
+
+        .godżilaspinner {
+            height: 200px;
+            animation: spinner 3s infinite linear;
+        }
+
+        .głowa2 {
+            position: absolute;
+            height: 200px;
+            top: 250px;
+            animation: spinner 4s infinite alternate;
+        }
+
+        .img1-section {
+            background-image: url(godżilastoiwmgle.webp);
+        }
+
+        .img1-section>p {
+            color: #018881;
+        }
+
+        .img2-section-p {
+            position: absolute;
+            z-index: 9999;
+            top: 140px;
+            left: -500px;
+            font-size: xx-large;
+            animation: slide2 7s infinite linear;
+            width: max-content;
+        }
+
+        .img2-section-p>p {
+            font-weight: bold;
+            animation: colorChange2 3s infinite alternate;
+        }
+
+        .serce {
+            animation: pulse 0.6s infinite alternate;
+        }
+
+        @keyframes spinner {
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #957C00;
+            }
+
+            20% {
+                color: #E0BA00;
+            }
+
+            40% {
+                color: #468700;
+            }
+
+            60% {
+                color: #69CA00;
+
+            }
+
+            80% {
+                color: #953400;
+
+            }
+
+            100% {
+                color: #E04E00;
+
+            }
+        }
+
+        @keyframes colorChange2 {
+            0% {
+                color: #041c86;
+            }
+
+            20% {
+                color: #2564eb;
+            }
+
+            40% {
+                color: #13cae2;
+            }
+
+            60% {
+                color: #8735f1;
+
+            }
+
+            80% {
+                color: #6c09a5;
+
+            }
+
+            100% {
+                color: #4500c5;
+
+            }
+        }
+
+        @keyframes slide2 {
+            100% {
+                transform: translate(1000px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="header-text">GODŻILA ŻYCIEM!</p>
+        <a href="index.html">
+            <p class="header-button">Wolę dinozaury!</p>
+        </a>
+    </header>
+    <main>
+        <video class="main-video" autoplay muted loop>
+            <source src="godżilavideo.mp4" type="video/mp4">
+        </video>
+        <div class="h1-animator">
+            <h1 class="main-h1">ŁĄCZMY SIĘ W MIŁOŚCI DO GODŻILI!</h1>
+        </div>
+        <div class="img1-section">
+            <img src="serduszko.png" alt="serduszko" class="serce">
+            <p>Nasze serca biją dla godżili!</p>
+        </div>
+        <div class="img2-section">
+            <img src="godżilaspinner.png" alt="godżilaspinner" class="godżilaspinner">
+            <div class="img2-section-p">
+                <p>KOCHAMY GODŻILEEEEE!!!!</p>
+            </div>
+            <img src="godżilagłowa.png" alt="dinogłowa2" class="głowa2">
+        </div>
+    </main>
+
+</body>
+
+</html>

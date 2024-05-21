@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinozaury</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            background-image: url(dinokrajobraz.jpg);
+        }
+
+        .header-text {
+            color: darkgoldenrod;
+            text-shadow: 0px 3px 5px gray;
+        }
+
+        .header-button {
+            animation: colorChange2 3s infinite alternate;
+            text-shadow: 0px 0px 3px rgb(255, 255, 255);
+            background-image: url(godżilawalczyzokrętami.jpg);
+        }
+
+        .main-h1 {
+            animation: colorChange 3s infinite alternate;
+        }
+
+        .serce-div {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .img1-section {
+            color: rgb(255, 227, 227);
+            background-image: url(dinooko.jpg);
+        }
+
+        .img2-section {
+            background-image: url(dinowulkan.jpg);
+            background-size: cover;
+        }
+
+        .img2-section-p {
+            animation: colorChange 1s infinite alternate;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #957C00;
+            }
+
+            20% {
+                color: #E0BA00;
+            }
+
+            40% {
+                color: #468700;
+            }
+
+            60% {
+                color: #69CA00;
+
+            }
+
+            80% {
+                color: #953400;
+
+            }
+
+            100% {
+                color: #E04E00;
+
+            }
+        }
+
+        @keyframes colorChange2 {
+            0% {
+                color: #041c86;
+            }
+
+            20% {
+                color: #2564eb;
+            }
+
+            40% {
+                color: #13cae2;
+            }
+
+            60% {
+                color: #8735f1;
+
+            }
+
+            80% {
+                color: #6c09a5;
+
+            }
+
+            100% {
+                color: #4500c5;
+
+            }
+        }
+
+        .serce {
+            animation: pulse 0.6s infinite alternate-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="header-text">DINOZAURY ŻYCIEM!</p>
+        <a href="godżila.html">
+            <p class="header-button">Wolę godżile!</p>
+        </a>
+    </header>
+    <main>
+        <video class="main-video" autoplay muted loop>
+            <source src="dinotrampolina.mp4" type="video/mp4">
+        </video>
+        <div class="h1-animator">
+            <h1 class="main-h1">ŁĄCZMY SIĘ W MIŁOŚCI DO DINOZAURÓW!</h1>
+        </div>
+        <div class="img1-section">
+            <img src="serduszko.png" alt="serduszko" class="serce">
+            <p>Nasze serca biją dla dinozaurów!</p>
+        </div>
+        <div class="img2-section">
+            <img src="dinogłowa.png" alt="dinogłowa" class="głowa">
+            <div class="img2-section-p">
+                <p>KOCHAMY DINOZAURYYYY!!!!</p>
+            </div>
+            <img src="dinogłowa2.png" alt="dinogłowa2" class="głowa2">
+        </div>
+    </main>
+
+</body>
+
+</html>
